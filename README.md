@@ -1,7 +1,7 @@
 ### Teensy 4.x modified as I require, specifically:
 
 - Added audioparams.h
-    - parameterises 44.1k, 48k, 96k sample rates
+    - parameterises 44.1k, 48k sample rates
     - Affects:
         - AudioStream.h - SAMPLE_RATE_EXACT
         - usb_desc.h - AUDIO_TX_SIZE / AUDIO_RX_SIZE
