@@ -31,6 +31,7 @@
 
 #include <Arduino.h>
 #include "AudioStream.h"
+#include <audioparams.h>
 
 #if defined(__IMXRT1062__)
   #define MAX_AUDIO_MEMORY 229376

@@ -32,6 +32,7 @@
 #include "usb_dev.h"
 #include "usb_audio.h"
 #include "debug/printf.h"
+#include <audioparams.h>
 
 #ifdef AUDIO_INTERFACE
 

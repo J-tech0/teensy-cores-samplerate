@@ -31,6 +31,7 @@
 #pragma once
 
 #include "usb_desc.h"
+#include <audioparams.h>
 #ifdef AUDIO_INTERFACE
 
 #define FEATURE_MAX_VOLUME 0xFF  // volume accepted from 0 to 0xFF

@@ -35,6 +35,8 @@
 // provided by usb_dev.c are meant to be called only by
 // code which provides higher-level interfaces to the user.
 
+#include <audioparams.h>
+
 #include <stdint.h>
 #include <stddef.h>
 

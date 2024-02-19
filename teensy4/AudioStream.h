@@ -31,6 +31,8 @@
 #ifndef AudioStream_h
 #define AudioStream_h
 
+#include <audioparams.h>
+
 #ifndef __ASSEMBLER__
 #include <stdio.h>  // for NULL
 #include <string.h> // for memcpy

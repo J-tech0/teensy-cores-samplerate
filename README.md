@@ -7,6 +7,7 @@ Teensy 4.x modified to parameterise the Audio config, specifically:
     - Affects:
         - AudioStream.h - SAMPLE_RATE_EXACT
         - usb_desc.h - AUDIO_TX_SIZE / AUDIO_RX_SIZE
+        - usb_desc.c - USB_DESC_SAMPLERATE (via usb_desc.h)
         - usb_audio.cpp - feedback_accumulator (via usb_audio.h), target (in function - usb_audio_transmit_callback, via usb_audio.h)
         - usb.c - AUDIO_INTERFACE endpoint0_buffer (via usb_audio.h)
 

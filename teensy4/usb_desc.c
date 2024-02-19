@@ -37,6 +37,7 @@
 #include "imxrt.h"
 #include "avr_functions.h"
 #include "avr/pgmspace.h"
+#include <audioparams.h>
 
 // At very slow CPU speeds, the OCRAM just isn't fast enough for
 // USB to work reliably.  But the precious/limited DTCM is.  So

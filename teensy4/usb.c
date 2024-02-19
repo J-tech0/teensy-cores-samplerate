@@ -16,6 +16,7 @@
 #include "avr/pgmspace.h"
 #include <string.h>
 #include "debug/printf.h"
+#include <audioparams.h>
 
 //#define LOG_SIZE  20
 //uint32_t transfer_log_head=0;
