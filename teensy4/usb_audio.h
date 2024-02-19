@@ -38,6 +38,19 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifndef USB_AUDIO_FEEDBACK_ACCUMULATOR
+#define USB_AUDIO_FEEDBACK_ACCUMULATOR 739875226  // 44.1 * 2^24
+#endif
+
+#ifndef USB_AUDIO_SAMPLE_RATE_TARGET
+#define USB_AUDIO_SAMPLE_RATE_TARGET 44100
+#endif
+
+#ifndef AUDIO_INTERFACE_BUFFER
+#define AUDIO_INTERFACE_BUFFER 44100
+#endif
+
 extern void usb_audio_configure();
 extern uint16_t usb_audio_receive_buffer[];
 extern uint16_t usb_audio_transmit_buffer[];

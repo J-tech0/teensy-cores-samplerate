@@ -94,7 +94,7 @@ void usb_audio_configure(void)
 	printf("usb_audio_configure\n");
 	usb_audio_underrun_count = 0;
 	usb_audio_overrun_count = 0;
-	feedback_accumulator = 739875226; // 44.1 * 2^24
+	feedback_accumulator = USB_AUDIO_FEEDBACK_ACCUMULATOR;
 	if (usb_high_speed) {
 		usb_audio_sync_nbytes = 4;
 		usb_audio_sync_rshift = 8;
@@ -393,12 +393,19 @@ unsigned int usb_audio_transmit_callback(void)
 	uint32_t avail, num, target, offset, len=0;
 	audio_block_t *left, *right;
 
+	#if USB_AUDIO_SAMPLE_RATE_TARGET == 48000
+	target=48;
+	#elif USB_AUDIO_SAMPLE_RATE_TARGET == 96000
+	target=96;
+	#else
 	if (++count < 10) {   // TODO: dynamic adjust to match USB rate
 		target = 44;
 	} else {
 		count = 0;
 		target = 45;
 	}
+	#endif
+
 	while (len < target) {
 		num = target - len;
 		left = AudioOutputUSB::left_1st;
