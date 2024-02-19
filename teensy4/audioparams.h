@@ -7,9 +7,11 @@
 #define AudioParams_h
 
 
-#define SAMPLE_RATE_PARAM
+#define SAMPLE_RATE_PARAM 44100
 
-
+#ifndef SAMPLE_RATE_PARAM
+#define SAMPLE_RATE_PARAM 44100
+#endif
 
 #if SAMPLE_RATE_PARAM == 48000
     #define AUDIO_SAMPLE_RATE_EXACT 48000.0f            //AudioStream.h, sample rate

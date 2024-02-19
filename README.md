@@ -1,9 +1,7 @@
-Teensy 2.0, LC, 3.x, 4.x core libraries for Arduino.
-
-Teensy 4.x modified to parameterise the Audio config, specifically:
+### Teensy 4.x modified as I require, specifically:
 
 - Added audioparams.h
-    - allows for 44.1k, 48k, 96k sample rates
+    - parameterises 44.1k, 48k, 96k sample rates
     - Affects:
         - AudioStream.h - SAMPLE_RATE_EXACT
         - usb_desc.h - AUDIO_TX_SIZE / AUDIO_RX_SIZE
@@ -13,6 +11,16 @@ Teensy 4.x modified to parameterise the Audio config, specifically:
 
 
 
+
+
+
+
+
+
+Forked from:
+
+
+Teensy 2.0, LC, 3.x, 4.x core libraries for Arduino.
 
 The latest stable version of Teensy's core library is always available in the Teensyduino installer, at this page:
 
